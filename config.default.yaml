@@ -1,0 +1,54 @@
+jira:
+  # Primary Jira instance (token auth via .netrc / _netrc)
+  primary_url: "https://jira.example.com"
+  primary_host: "jira.example.com"
+
+  # Secondary Jira instance (basic auth via .netrc / _netrc)
+  secondary_url: "https://jira2.example.com"
+  secondary_host: "jira2.example.com"
+
+  # JQL saved-filter name used by the default query
+  default_filter: "NAV-DEFECTS - Pre-Analysis Team"
+
+  # Prefix for automated Jira comments
+  comment_prefix: "#tracker_preanalysis"
+
+  # Timezone used when comparing Jira comment timestamps
+  server_timezone: "UTC"
+
+  # Issue types included when fetching training data
+  issue_types:
+    - "Bug"
+    - "SW Defect"
+
+# Epic key → display name mapping.
+# Used by the classifier, the training fetch, and the retrain script.
+# Keys must match the actual Jira epic keys in your instance.
+epics:
+  EPIC-342312: "Bug - Speech"
+  EPIC-342319: "Bug - Traffic"
+  EPIC-342328: "Bug - Search"
+  EPIC-342330: "Bug - Routing"
+  EPIC-342344: "Bug - Positioning"
+  EPIC-342348: "Bug - My Destinations"
+  EPIC-342350: "Bug - Map"
+  EPIC-342361: "Bug - Guiding"
+  EPIC-342365: "Bug - Eventlist and Eventline"
+  EPIC-342366: "Bug - eRoute"
+  EPIC-444888: "Bug - eRange"
+  EPIC-536487: "Bug - Charging Station Search"
+  EPIC-592401: "Bug - Stability"
+  EPIC-630404: "Bug - System"
+  EPIC-342321: "Bug - Start up"
+  EPIC-342290: "Bug - Memory"
+  EPIC-342340: "Bug - Destination Proposals"
+  EPIC-342347: "Bug - Parking"
+  EPIC-342368: "Bug - Dangerous Curves (DCA)"
+  EPIC-342372: "Bug - App activator"
+  EPIC-344945: "Bug - eDriveZone"
+  EPIC-653893: "Bug - NACS"
+  EPIC-655954: "Bug - VWM"
+  EPIC-709631: "Bug - Data lib"
+  EPIC-704952: "Bug - Hazard Warning"
+  EPIC-504943: "Bug - search via speech - Amazon"
+  EPIC-471815: "Bug - search via speech - Cerence"

@@ -1,0 +1,7 @@
+jira==3.10.5
+pytz==2025.2
+pyyaml>=6.0
+questionary==2.1.1
+scikit_learn==1.8.0
+spacy==3.8.14
+termcolor==3.3.0
