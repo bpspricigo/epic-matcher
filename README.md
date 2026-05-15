@@ -1,5 +1,7 @@
 # Epic Matcher
 
+> Built during BMW Navigation App function ownership · In daily production use · Python · scikit-learn
+
 Automatically route unclassified bug tickets to the right engineering epic using a trained machine learning model — then let a human review and confirm each one.
 
 Built for teams that receive a steady stream of defect tickets that need to be triaged into topic areas before engineers can pick them up. The model does the first pass; you do the last mile.
